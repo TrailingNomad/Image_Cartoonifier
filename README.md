@@ -62,7 +62,6 @@ Terminology
     </br>
     <li>Cost function : It gives an estimate as to how close is the hypothesis to the actual value.</li>
     </br>
-    </br>
     <li>Feature scaling : For multiple features, it is seen that gradient descent converges much faster if the features are in the same range of values. So features sre appropriately multiplied or divided (scaled) by certain values.</li>
 
 
