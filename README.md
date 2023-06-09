@@ -83,5 +83,12 @@ Terminology
   <li>Hybrid neural network- Used for complex applications such as autonomous driving </li>
   </br>
 </ul>
+ </br>Steps</br></br>
+  <ul>
+  <li>Forward propagation : To calculate the objective function (function to be optimized)</li>
+  </br>
+  <li>Backward propagation : To calculate the derivative of the objective function ( Visualize a computational graph of the derivative using the chain rule) </li>
+  </br>
+</ul>
  </ul>
  
