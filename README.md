@@ -68,5 +68,20 @@ Terminology
   </ul>
 
 </ol>
-
+<ul>
+  <li><b> Neural Networks</b></li>
+  </br>Types of Neural networks</br></br>
+  <ul>
+  <li>Standard neural network-Application : Real estate and Online advertising</li>
+  </br>
+  <li>Convolutional neural network- Used for image inputs. 
+  Application : Photo tagging</li>
+  </br>
+  <li>Recurrent neural network- Used when you have sequence data such as text and audio. An audio is considered as a temporal (time) sequence.
+  Application : Speech recognition and Machine translation </li>
+  </br>
+  <li>Hybrid neural network- Used for complex applications such as autonomous driving </li>
+  </br>
+</ul>
+ </ul>
  
