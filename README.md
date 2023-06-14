@@ -90,5 +90,20 @@ Terminology
   <li>Backward propagation : To calculate the derivative of the objective function ( Visualize a computational graph of the derivative using the chain rule) </li>
   </br>
 </ul>
+  Structure of Neural networks</br></br>
+  <ul>
+  <li>Input layer : Contains a stack of nodes which are input to the neural network </li>
+  </br>
+  <li>Hidden layer : Consists of the stack of nodes which aren't seen in the training data</li>
+  </br>
+  <li>Output layer : The output/predicted value of the neural network</li>
+  </br>
+  <li>Activation values : Set of nodes which are passed as input to the subsequent layer </li>
+  </br>
+  <li>N layered neural network : A neural network is said to be N layered if it consists of N lyers <b>excluding</b> the input layer</li>
+  </br>
+  <li>Vectorization : Nodes of a particular layer are stacked vertically and training examples are stacked horizontally</li>
+  </br>
+</ul>
  </ul>
  
