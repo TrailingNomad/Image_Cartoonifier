@@ -104,6 +104,22 @@ Terminology
   </br>
   <li>Vectorization : Nodes of a particular layer are stacked vertically and training examples are stacked horizontally</li>
   </br>
+  <li>Activation function : Function that maps two subsequent layers</li>
+  </br>
+    Types :
+  </br>
+    <ul>
+      <li>Linear activation function  : May be used with the output layer. Generally not used with hidden layers because the combination of linear functions is a linear function. </li>
+      </br>
+      <li>Sigmoid function : Used primarily for the output layer during binary classification</li>
+      </br>
+      <li>Hyperbolic tangent function : Superior to the sigmoid function. Mean value is zero. At very large and small values of z the gradient becomes almost zero making gradient descent slow. </li>
+      </br>
+      <li>Rectified Linear Unit (ReLU) function : Def - max(0,z) </br> Most commonly used. Overcomes the drawback of the tanh function in the positive range.</li>
+      </br>
+      <li>Leaky ReLU function : Def - max(0.01*z,z) </br>Overcomes the drawback of gradient descent being very slow in all ranges.</li>
+      </br>
+    </ul>
 </ul>
  </ul>
  
