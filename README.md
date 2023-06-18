@@ -1,5 +1,5 @@
 # Image_Cartoonifier
-<ol>
+<ul>
   <li>Machine learning :</li>
 </br>
  If for a particular task T, performance P increases with experience E, the problem can be classified as a machine learning problem
@@ -67,7 +67,7 @@ Terminology
 
   </ul>
 
-</ol>
+</ul>
 <ul>
   <li><b> Neural Networks</b></li>
   </br>Types of Neural networks</br></br>
@@ -100,6 +100,8 @@ Terminology
   </br>
   <li>Activation values : Set of nodes which are passed as input to the subsequent layer </li>
   </br>
+  <li>Hyper parameters : Parameters that help you compute the real parameters. Eg- learning rate, number of hidden units, number of hidden nodes etc. </li>
+  </br>
   <li>N layered neural network : A neural network is said to be N layered if it consists of N lyers <b>excluding</b> the input layer</li>
   </br>
   <li>Vectorization : Nodes of a particular layer are stacked vertically and training examples are stacked horizontally</li>
@@ -120,6 +122,7 @@ Terminology
       <li>Leaky ReLU function : Def - max(0.01*z,z) </br>Overcomes the drawback of gradient descent being very slow in all ranges.</li>
       </br>
     </ul>
+    Random Initialization : z = wx + b </br> The weight w is randomly initialized instead of being initialized to a zero matrix because doing the latter will give the same output for every node which defeats the purpose of having multiple nodes in a particular hidden layer. This problem is often termed as symmetry. However the weight b can be initialized to a zeo matrix as initializing w to a non zero matrix breaks the symmetry.
 </ul>
  </ul>
  
