@@ -125,4 +125,38 @@ Terminology
     Random Initialization : z = wx + b </br> The weight w is randomly initialized instead of being initialized to a zero matrix because doing the latter will give the same output for every node which defeats the purpose of having multiple nodes in a particular hidden layer. This problem is often termed as symmetry. However the weight b can be initialized to a zeo matrix as initializing w to a non zero matrix breaks the symmetry.
 </ul>
  </ul>
+
+ 
+ <ul>
+  <li><b> Convolutional Neural Networks</b></li>
+  </br>Applications</br></br>
+  <ul>
+  <li>Image classification - Identify objects present in the image</li>
+  </br>
+  <li>Object detection - Identify the location of objects in the image </li>
+  </br>
+  <li>Neural style transfer - Applying an art style to your image </li>
+  </br>
+  </ul>
+   <li>Convolution Vs Cross Correlation</li>
+   <p>In mathematics and signal processing the convolution operation involves applying an additional mirror operation on the filter before overlapping it with the image. This gives the convolution operator an additional property of associativity ( $A*(B*C)=(A*B)*C$) useful in mathematics and signal processing. Convolution without this inital mirroring of the filter is strictly called cross correlation but in machine learning literature it is referred to as convolution.</p>
+    <li>Disadvantages of convolution</li>
+ </br>
+    <ul>
+      <li>Shrinkage of image output : If you have a nXn image convoluted with a fXf filter the image output is of size (n-f+1)X(n-f+1) </li>
+    </br>
+       <li>Throwing away information from the corners : During convolution the filter overlaps with the corners only once whereas the other pixels are overlapped with several times. It is as if the corner information is being less represented in the output. </li>
+    </br>
+    </ul>
+   <li>Padding</li>
+ </br>To overcome the above disadvantages we add extra pixels around the border. This is known as padding. Depending on the type of padding there are two types of convolutions :</br>
+   <ul>
+     <li>Valid : Padding size is 0.</li>
+     <li>Same : Padding size is such that image output is of the same size as that of the input. When the padding size is p image output is of size (n+2p-f-1)X(n+2p-f+1). For no shrinkage</br> $n+2p-f+1=n$</br>$p= (f-1)/2$</br>Note : Generally f is odd which enables symmetric padding and helps us to define a central position.</li>
+   </ul>
+   <li>Strided Convolutions : Defining the stride tells us how many pixels to jump while applying the filter for the convolution operation. The size of the image output is $((n+2p-f)/s +1)X((n+2p-f)/s + 1)$</li>
+    </ul>
+  
+    
+</ul>
  
