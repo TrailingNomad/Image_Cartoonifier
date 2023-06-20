@@ -154,6 +154,7 @@ Terminology
      <li>Valid : Padding size is 0.</li>
      <li>Same : Padding size is such that image output is of the same size as that of the input. When the padding size is p image output is of size (n+2p-f-1)X(n+2p-f+1). For no shrinkage</br> $n+2p-f+1=n$</br>$p= (f-1)/2$</br>Note : Generally f is odd which enables symmetric padding and helps us to define a central position.</li>
    </ul>
+ </br>
    <li>Strided Convolutions : Defining the stride tells us how many pixels to jump while applying the filter for the convolution operation. The size of the image output is $((n+2p-f)/s +1)X((n+2p-f)/s + 1)$</li>
     </ul>
   
