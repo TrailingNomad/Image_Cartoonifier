@@ -149,13 +149,16 @@ Terminology
     </br>
     </ul>
    <li>Padding</li>
- </br>To overcome the above disadvantages we add extra pixels around the border. This is known as padding. Depending on the type of padding there are two types of convolutions :</br>
+To overcome the above disadvantages we add extra pixels around the border. This is known as padding. Depending on the type of padding there are two types of convolutions :</br>
    <ul>
      <li>Valid : Padding size is 0.</li>
      <li>Same : Padding size is such that image output is of the same size as that of the input. When the padding size is p image output is of size (n+2p-f-1)X(n+2p-f+1). For no shrinkage</br> $n+2p-f+1=n$</br>$p= (f-1)/2$</br>Note : Generally f is odd which enables symmetric padding and helps us to define a central position.</li>
    </ul>
  </br>
-   <li>Strided Convolutions : Defining the stride tells us how many pixels to jump while applying the filter for the convolution operation. The size of the image output is $((n+2p-f)/s +1)X((n+2p-f)/s + 1)$</li>
+   <li>Strided Convolutions : Defining the stride tells us how many pixels to jump while applying the filter for the convolution operation. The size of the image output is $(\lfloor(n+2p-f)/s \rfloor +1)X(\lfloor(n+2p-f)/s \rfloor+1)$</li>
+    </br>
+   <li>Pooling</li>
+   <p>It is like applying a filter with a particular stride and generally no padding that gives you the maximum or average of the overlapped input image pixels. This layer has no parameters to learn. The output image is of size $(\lfloor(n_h+2p-f)/s \rfloor +1)X(\lfloor(n_w+2p-f)/s \rfloor+1)X n_c$</p>
     </ul>
   
     
